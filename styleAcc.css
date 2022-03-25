@@ -26,6 +26,14 @@ body
     overflow-x: hidden;
 }
 
+header,
+main,
+nav,
+footer
+{
+    animation: PageB 2s forwards;
+}
+
 .logo
 {
     display: flex;
@@ -459,6 +467,21 @@ footer li
         opacity: 0;
     }
 
+}
+
+@keyframes PageB
+{
+    0% {
+        opacity: 0;
+    }
+
+    99% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100%;
+    }
 }
 
 
