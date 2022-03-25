@@ -111,7 +111,8 @@ footer
 {
     box-shadow: 2px 1px 5px 2px rgb(255, 255, 255) ;
     transition-duration: 1s;
-    transform: scale(1.2);
+    transform: scale(1.1);
+    filter: brightness(1.15);
 }
 
 

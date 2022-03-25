@@ -15,15 +15,15 @@
     font-family: Roboto;
 }
 
+body
+{
+    background-color: #f2f2f2;
+}
+
 .Titremain em
 {
     font-family: Shrikhand;
     font-size: 25px;
-}
-
-body
-{
-    background-color: #f2f2f2;
 }
 
 .Desc p
@@ -71,16 +71,15 @@ header
     object-position: center;
 }
 
-main
+.FlexBetween
 {
-    border-radius: 0 30px 30px 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .Titremain
 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    
     padding: 0 25px;
 }
 
@@ -96,10 +95,15 @@ main
     font-size: 25px;
     display: flex;
     justify-content: flex-end;
+    margin-top: -60px;
     margin-right: 20px;
     transition: transform 500ms ease-in-out;
     position: relative;
-    color: #9356DC;
+    color: linear-gradient(
+        to right,
+        #9356DC, 
+        #FF79DA
+    );
 }
 
 .CoeurRempli
@@ -117,6 +121,11 @@ main
 }
 
 
+main
+{
+    border-radius: 0 30px 30px 0;
+}
+
 .LesMenus
 {
     display: flex;
@@ -131,12 +140,6 @@ main
     border-bottom: 2px solid #99E2D0;
     width: 50px;
     font-weight: 300;
-}
-
-.FlexBetween
-{
-    display: flex;
-    justify-content: space-between;
 }
 
 .Entrees,
@@ -291,7 +294,8 @@ main
 {
     box-shadow: 2px 1px 5px 2px rgb(255, 255, 255) ;
     transition-duration: 1s;
-    transform: scale(1.2);
+    transform: scale(1.1);
+    filter: brightness(1.15);
 }
 
 
