@@ -441,7 +441,7 @@ footer li
     display:flex;
     justify-content: center;
     align-items: center;
-    transition: loader opacity 4s ease-in-out;
+    transition: loader 4s ease-in-out;
     top:0;
     left:0;
     animation: Load 2s forwards;
