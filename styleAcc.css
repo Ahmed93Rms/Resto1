@@ -428,6 +428,11 @@ footer li
         width: 200px;
     }
 
+    .fa-heart
+    {
+        font-size: 20px;
+    }
+
 }
 
 /* Loader */
