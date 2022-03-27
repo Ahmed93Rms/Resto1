@@ -94,8 +94,8 @@ footer
     align-items: center;
     text-decoration: none;
     color: white;
-    background: #9356DC;
-    background: linear-gradient(330deg, #9356DC 27%, #FF79DA 100%);;
+    background: rgb(255,121,218);
+    background: linear-gradient(23deg, rgba(255,121,218,1) 15%, rgba(147,86,220,1) 77%);
     margin-top: 15px;
     margin-bottom: 15px;
     width: 250px;
@@ -181,6 +181,13 @@ main h2
     margin-right: 0;
 }
 
+.FlexBetween
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .Restos
 {
     display: flex;
@@ -234,39 +241,60 @@ main h2
     margin-left: 10px;
 }
 
-.far
-{
-    text-decoration: none;
-    color: initial;
-    margin-left: -25px;
-}
 
-.IconCoeur
+.CoeurBtn 
 {
-    font-size: 25px;
-    display: flex;
-    justify-content: flex-end;
-    margin-top: -60px;
-    margin-right: 20px;
-    transition: transform 500ms ease-in-out;
+    height: 2rem;
+    width: 2rem;
+    background-color: transparent;
+    border: transparent 0px solid;
+    padding: 0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor: pointer;
     position: relative;
-    color: #9356DC;
+    background-color: black;
+    margin-right: 5px;
+}
+    
+.CoeurBtn:hover::before 
+{
+      opacity: 1;
 }
 
-.CoeurRempli
+.CoeurBtn::before 
 {
-    margin-left: -25px;
+    opacity: 0;
+    transition: 0.5s;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(255,121,218);
+    background: linear-gradient(23deg, rgba(255,121,218,1) 15%, rgba(147,86,220,1) 77%);
+}
+
+.CoeurClr {
+    transition-duration: .25s;
     background-color: white;
-    transition: all .7s linear 0s;   
-    width: 25px;
-    height: 100%; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    mix-blend-mode: lighten;
 }
 
-.IconCoeur:hover .CoeurRempli 
+.CoeurBtn:hover .CoeurClr--NC
 {
-    height: 0%;
+    opacity: 0; 
 }
-
 
 /* Class Foot Acc*/
 
@@ -425,8 +453,8 @@ footer li
     width: 50px;
     height: 50px;
     border-radius: 25px;
-    background: #9356DC;
-    background: linear-gradient(330deg, #9356DC 27%, #FF79DA 100%);;
+    background: rgb(255,121,218);
+    background: linear-gradient(23deg, rgba(255,121,218,1) 15%, rgba(147,86,220,1) 77%);
     margin: 0 15px;
     animation: loader 1.5s alternate;
     z-index: 2000;  
